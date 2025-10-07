@@ -1,0 +1,76 @@
+import type { Experience } from '@/types';
+
+export const experiences: Experience[] = [
+  {
+    company: 'Aller Media Oy, Helsinki',
+    period: 'May 2022 — August 2025',
+    title: 'Full-stack developer',
+    description: {
+      1: 'Developed and maintained a high-traffic digital media platform, Seiska.fi.',
+      2: 'Implemented frontend and end-to-end tests using React Testing Library and Playwright to ensure application quality.',
+      3: 'Contributed in migrating the Next.js project from pages router to app router and website redesign.',
+      4: 'Contributed in implementing login feature in the website using AWS Cognito service and NextAuth.js.',
+      5: 'Created and deployed cloud infrastructures using AWS CDK.',
+      6: 'Customized and extended the CMS used by news editors and helping editorial workflows.',
+      7: 'Collaborated closely with designers, developers and product stakeholders in an agile team environment.',
+      8: 'Participated in sprint planning, code reviews and feature rollouts to ensure high-quality delivery.',
+      9: 'Ensured maintainable, testable, and well-documented code across the codebase.',
+    },
+    technologies: [
+      'TypeScript',
+      'React',
+      'Next.js',
+      'TailwindCSS',
+      'Styled Components',
+      'Node.js',
+      'Express',
+      'TanStack Query',
+      'AWS',
+      'AWS CDK',
+      'React Testing Library',
+      'Playwright E2E Testing',
+      'Docker',
+      'GitHub Actions',
+    ],
+  },
+  {
+    company: 'Integrify Oy',
+    period: 'January 2022 — April 2022',
+    title: 'Full-stack developer',
+    description: {
+      1: 'Participated in training program for full-stack development and DevOps practices.',
+      2: 'Studied and collaborated closely with fellow developers to deepen expertise in TypeScript, React.js, Redux, Docker, AWS services in addition to other technologies and concepts such as accessibility.',
+      3: 'Contributed to knowledge sharing, pair programming, and code reviews, fostering a culture of continuous learning and improvement.',
+    },
+    technologies: [
+      'React',
+      'TypeScript',
+      'Redux',
+      'Redux Toolkit',
+      'AWS',
+      'Docker',
+    ],
+  },
+  {
+    company: 'Hivemind Ltd, Turku',
+    period: 'October 2020 — March 2021',
+    title: 'Developer',
+    description: {
+      1: 'Worked on developing invoice generator application.',
+      2: 'Responsible for front-end development of the application for creating invoice template and other pages to display invoice information.',
+      3: 'Contributed to the creation of technical documentation.',
+    },
+    technologies: ['React', 'Redux', 'Material-UI', 'Firestore'],
+  },
+  {
+    company: 'Web2Fix Oy, Helsinki',
+    period: 'January 2013 — July 2013',
+    title: 'Software Developer',
+    description: {
+      1: 'Supported the development of a website for a car dealership.',
+      2: 'Updated the UI of the website according to the user requirements.',
+      3: 'Developed a Content Management System by using jQuery in the front-end and PHP with MySQL in the back-end of the system.',
+    },
+    technologies: ['PHP', 'MySQL', 'jQuery', 'HTML', 'CSS'],
+  },
+];

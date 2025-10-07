@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 
+import navLinks from '@/constants/index';
+
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,14 +15,6 @@ export function Navigation() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const navLinks = [
-    { href: '#about', label: 'About' },
-    { href: '#experience', label: 'Experience' },
-    { href: '#education', label: 'Education' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#contact', label: 'Contact' },
-  ];
 
   return (
     <nav

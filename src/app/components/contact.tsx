@@ -28,54 +28,48 @@ const socialLinks = [
 export function Contact() {
   return (
     <section id="contact" className="py-20 md:py-32 px-4 sm:px-6 lg:px-8">
-      <div className="container mx-auto max-w-5xl">
-        <div className="max-w-2xl mx-auto text-center space-y-8">
-          <div className="space-y-4">
-            <h2 className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
-              Contact
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              I am always interested in hearing about new projects and
-              opportunities. Whether you have a question or just want to say hi,
-              feel free to reach out!
-            </p>
-          </div>
+      <div className="container mx-auto max-w-2xl text-center space-y-8">
+        <div className="space-y-4">
+          <h2 className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+            Contact
+          </h2>
+          <p className="text-gray-600 leading-relaxed">
+            I am always interested in hearing about new projects and
+            opportunities. Whether you have a question or just want to say hi,
+            feel free to reach out!
+          </p>
+        </div>
 
-          <div className="space-y-4">
-            <h4 className="text-sm font-semibold uppercase tracking-wider">
-              Connect With Me
-            </h4>
-            <div className="flex gap-4 justify-center">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-600 hover:text-gray-900 transition-colors"
-                  aria-label={social.label}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-2">
-            <h4 className="text-sm font-semibold uppercase tracking-wider">
-              Email
-            </h4>
-            <a
-              href="mailto:hello@example.com"
-              className="text-lg text-blue-600 hover:text-blue-700 transition-colors"
-            >
-              ishworkhadka70@gmail.com
-            </a>
+        <div className="space-y-4">
+          <h4 className="text-sm font-semibold uppercase tracking-wider">
+            Connect With Me
+          </h4>
+          <div className="flex gap-4 justify-center">
+            {socialLinks.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center h-10 w-10 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-600 hover:text-gray-900 transition-colors"
+                aria-label={social.label}
+              >
+                {social.icon}
+              </a>
+            ))}
           </div>
         </div>
 
-        <div className="mt-20 pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-          <p>© {new Date().getFullYear()} All rights reserved.</p>
+        <div className="space-y-2">
+          <h4 className="text-sm font-semibold uppercase tracking-wider">
+            Email
+          </h4>
+          <a
+            href="mailto:hello@example.com"
+            className="text-lg text-blue-600 hover:text-blue-700 transition-colors"
+          >
+            ishworkhadka70@gmail.com
+          </a>
         </div>
       </div>
     </section>
